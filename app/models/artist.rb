@@ -13,7 +13,7 @@ class Artist < ActiveRecord::Base
   def genre_count
     self.songs.all.map do |song|
       binding.pry
-      genres = song.genre
+      song.genre_id
     end
   end
 end
