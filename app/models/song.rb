@@ -8,6 +8,6 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     binding.pry
-    self.artist_id = drake.artist_id
+    self.artist_id = drake.id
   end
 end
