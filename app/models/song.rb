@@ -7,7 +7,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    binding.pry
+    # binding.pry
     drake = Artist.create(name: "Drake")
     self.artist_id = drake.id
   end
